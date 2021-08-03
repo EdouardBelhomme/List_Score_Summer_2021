@@ -3,7 +3,7 @@
 On a des scores de test qui vont de 300 à 850
 300 - score - 599 -> Pauvre 
 600 - score - 699 -> Adéquat
-700 - score - 749 -> Bien
+700 - score - 749 -> Bien 
 750 - score - 799 -> Excellent
 score >= 800 -> Elite
 Tu auras en entrée une liste des scores.
