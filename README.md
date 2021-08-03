@@ -1,7 +1,7 @@
 # List_Score_Summer_2021
 
-On a des scores de test qui vont de 300 à 850
-300 - score - 599 -> Pauvre
+On a des scores de test qui vont de 300 à 850 \n 
+300 - score - 599 -> Pauvre 
 600 - score - 699 -> Adéquat
 700 - score - 749 -> Bien
 750 - score - 799 -> Excellent
