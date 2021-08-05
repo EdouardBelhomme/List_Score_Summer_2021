@@ -30,13 +30,20 @@ def scores(list_scores):
     prct_bien = (bien/len(list_scores) * 100)
     prct_excellent = (excellent/len(list_scores) * 100)
     prct_elite= (elite/len(list_scores) * 100)
-    
-    
 
-    print(pauvre, adequat, bien, excellent, elite)
+    my_list = [
+        {"name": "Pauvre", "prct" : prct_pauvre, "poids" : 1},
+        {"name" : "Adequat", "prct" : prct_adequat, "poids" : 2},
+        {"name": "Bien", "prct" : prct_bien, "poids" : 3},
+        {"name" : "Excellent", "prct" : prct_excellent, "poids" : 4},
+        {"name" : "Elite", "prct" : prct_elite, "poids" : 5},
+        ]
+
+    my_list = sorted(my_list, key = lambda category: (category["prct"], category["poids"]), reverse = True)
+
+    for category in my_list:
+        if (category["prct"] > 0):
+            list_strings.append(category["name"]+ ": " + str(category["prct"]) + "%")
 
     return(list_strings)
-print(scores([830, 320, 710, 720]))
-
-
-
+print(scores([467, 637, 725, 333, 489, 815, 798, 637]))
